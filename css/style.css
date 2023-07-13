@@ -1,0 +1,15 @@
+
+@import "menu.css";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --vermelho: #e62d37;
+    --branco: #fff;
+}
