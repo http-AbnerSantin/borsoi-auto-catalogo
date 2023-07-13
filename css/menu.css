@@ -69,17 +69,13 @@ header {
         position: relative;
 
     }
-
-
-
     #menu {
         display: none;
         position: absolute;
-        margin-top: 15px;
         background: var(--vermelho);
-        padding: 30px ;
+        padding: 10px 30px ;
         align-items: center;
-        right: 0px;
+        right: -20px;
  
     }
     #menu li a{
