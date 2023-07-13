@@ -52,6 +52,9 @@ header {
     header {
         padding: 15px 30px;
     }
+    nav {
+        position: relative;
+    }
     header img {
         max-width: 70px;
     }
@@ -63,19 +66,27 @@ header {
         font-weight: bold;
         cursor: pointer;
         padding: 10px 20px;
+        position: relative;
 
     }
+
+
 
     #menu {
         display: none;
         position: absolute;
         margin-top: 15px;
         background: var(--vermelho);
-        padding: 20px ;
+        padding: 30px ;
+        align-items: center;
+        right: 0px;
+ 
     }
-    #menu li {
+    #menu li a{
         color: var(--branco);
+        
     }
+   
 
     #menu li a::after {
         display: none;
@@ -85,11 +96,17 @@ header {
         display: block;
         animation: dropdown .5s forwards;
         z-index: -1 ;
+        
+    }
+
+    #menu.ativo li a {
+        justify-content: center;
+        padding: 20px 10px;
     }
 
     @keyframes dropdown {
         from {
-            transform: translateY(-40px);
+            transform: translateY(-210px);
         }
         to {
             transform: translateY(0px);
