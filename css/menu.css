@@ -82,6 +82,10 @@ header {
         color: var(--branco);
         
     }
+    #menu li a:hover{
+        color: #eaeaea;
+        
+    }
    
 
     #menu li a::after {
