@@ -59,7 +59,9 @@ header {
         max-width: 70px;
     }
     #btn-mobile {
-        display: block;
+        display: flex;
+        align-items: center;
+        gap: 5px;
         border: none;
         background: var(--vermelho);
         color: var(--branco);
@@ -67,15 +69,27 @@ header {
         cursor: pointer;
         padding: 10px 20px;
         position: relative;
+        text-transform: uppercase;
 
     }
+
+    #btn-mobile::before {
+        content: '';
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        background: var(--branco);
+        box-shadow: 0 4px var(--branco), 0 -4px var(--branco);
+    }
+ 
     #menu {
         display: none;
         position: absolute;
         background: var(--vermelho);
-        padding: 10px 30px ;
+        padding: 10px 30px 10px 40px ;
         align-items: center;
         right: -20px;
+        
  
     }
     #menu li a{
@@ -86,7 +100,6 @@ header {
         color: #eaeaea;
         
     }
-   
 
     #menu li a::after {
         display: none;
@@ -98,6 +111,7 @@ header {
         z-index: -1 ;
         
     }
+
 
     #menu.ativo li a {
         justify-content: center;
