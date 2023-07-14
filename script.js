@@ -1,4 +1,4 @@
-function menuMobile(e) {
+function menuMobile() {
     const btnMobile = document.querySelector('#btn-mobile')
     
     if(btnMobile) {
@@ -17,11 +17,13 @@ menuMobile()
 
 function outside(callback) {
     const html = document.documentElement;
-    console.log(callback)
+    const header = document.querySelector('header')
+    
 
     function handleOutsideClick(event) {
-        if(event.target === html) {
+        if(event.target === html || event.target === header) {
             menu.classList.remove('ativo')
+            
         }
     }
     html.addEventListener('click', handleOutsideClick)
