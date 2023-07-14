@@ -2,16 +2,17 @@ function menuMobile() {
     const btnMobile = document.querySelector('#btn-mobile')
     
     if(btnMobile) {
-        btnMobile.addEventListener('click', () => {
-            const menu = document.querySelector('#menu')
-            menu.classList.toggle('ativo')
+        const eventos = ['click', 'touchstart']
+        eventos.forEach(item => {
+            btnMobile.addEventListener(item, () => {
+                const menu = document.querySelector('#menu')
+                menu.classList.toggle('ativo')
+            })
         })
         outside()
     }
 }
-
 menuMobile()
-
 
 //outside event
 
@@ -28,11 +29,6 @@ function outside(callback) {
     }
     html.addEventListener('click', handleOutsideClick)
 }
-
-
-
-
-
 
 
 //RELOAD DA PÁGINA
