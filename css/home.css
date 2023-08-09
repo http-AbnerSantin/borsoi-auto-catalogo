@@ -1,0 +1,27 @@
+.home {
+    background: var(--vermelho);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-title {
+    font-size: 128px;
+    color: var(--branco);
+}
+
+.home-text {
+    font-size: 32px;
+    color: var(--branco);
+}
+
+.button-catalogo {
+    color: var(--vermelho);
+    background: var(--branco);
+    border-radius: 60px;
+    padding: 15px 20px;
+    font-weight: bold;
+}
