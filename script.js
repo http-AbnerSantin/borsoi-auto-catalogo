@@ -38,3 +38,23 @@ logo.addEventListener('click', () => {
     location.reload()
 })
 
+
+//ESPECIFICACOES
+
+function especificacoes() {
+    const btnDrop = document.querySelectorAll('.btn-drop')
+    
+    if(btnDrop) {
+        const ativarList = document.querySelectorAll('.especificacoes');
+        btnDrop.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                ativarList.classList.add('ativar')
+            })
+        })
+    }
+}
+especificacoes()
+
+
+
+

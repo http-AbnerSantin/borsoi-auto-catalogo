@@ -1,6 +1,7 @@
 
 @import "menu.css";
 @import "home.css";
+@import "carros.css";
 
 
 * {
@@ -15,4 +16,10 @@
 :root {
     --vermelho: #EF0909;
     --branco: #fff;
+    --preto-cinza :#2E2828;
+    --cinza-claro :#fafafa;
+}
+
+body {
+    background: var(--cinza-claro);
 }

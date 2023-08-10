@@ -80,6 +80,7 @@ header {
         width: 12px;
         background: var(--branco);
         box-shadow: 0 4px var(--branco), 0 -4px var(--branco);
+        
     }
  
     #menu {
@@ -89,7 +90,7 @@ header {
         padding: 10px 30px 10px 40px ;
         align-items: center;
         right: -20px;
-        
+       
  
     }
     #menu li a{
@@ -108,7 +109,8 @@ header {
     #menu.ativo {
         display: block;
         animation: dropdown .5s forwards;
-        z-index: -1 ;
+        z-index: 1 ;
+        border: solid 1px var(--branco);
         
     }
 
